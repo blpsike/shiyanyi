@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>24215220137购物网页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* 左侧分类文字样式 */
+        .main-nav li {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .main-nav li .category-main {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .main-nav li .category-sub {
+            font-size: 12px;
+            color: #999;
+            margin-top: 2px;
+        }
+        .main-nav li:hover .category-main {
+            color: #f40;
+        }
+
+        /* 底部服务区域样式 */
+        .service-footer {
+            width: 1190px;
+            margin: 20px auto 0;
+            background: #fff;
+            padding: 30px 0;
+            border-top: 1px solid #eee;
+        }
+        .service-grid {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .service-item {
+            flex: 1;
+            border-right: 1px solid #eee;
+        }
+        .service-item:last-child {
+            border-right: none;
+        }
+        .service-icon span {
+            font-size: 32px;
+            display: block;
+        }
+        .service-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .service-desc {
+            font-size: 12px;
+            color: #999;
+            line-height: 1.8;
+        }
+        .service-desc a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .service-desc a:hover {
+            color: #f40;
+        }
+
+        /* 底部链接栏 */
+        .footer-links {
+            width: 1190px;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+            background: #fff;
+        }
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 12px;
+        }
+        .footer-links a:hover {
+            color: #f40;
+        }
+        .footer-links span {
+            color: #ddd;
+        }
+        .footer-copyright {
+            text-align: center;
+            padding: 15px 0 30px;
+            color: #999;
+            font-size: 12px;
+            background: #fff;
+        }
+        .rabbit-icon {
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <!--顶部导航 -->
+    <div class="site-nav">
+        <div class="site-nav-bd">
+            <ul>
+                <li>登录</li>
+                <li>注册</li>
+                <li>我的订单</li>
+                <li>
+                    <img src="img/car.png"><span>购物车</span>
+                </li>
+                <li>
+                    <img src="img/star.png"><span>收藏夹</span>
+                </li>
+                <li>联系客服</li>
+            </ul>
+        </div>
+    </div>
+    <!--顶部导航 end-->
+
+    <!--搜索-->
+    <div class="top-box">
+        <div class="logo">
+            <p>商城</p>
+            <p class="small">store</p>
+        </div>
+        <div class="search-box">
+            <div class="search-in">
+                <span>
+                    宝贝<img src="img/down.png" width="10" style="margin-left:10px">
+                </span>
+                <img src="img/search.png" width="16">
+                <input type="text" placeholder="小兔鲜">
+                <div class="but">搜索</div>
+            </div>
+            <div class="tag">
+                <a>运动裤</a>
+                <a>四件套</a>
+                <a class="on">手机</a>
+                <a>潮流T恤</a>
+                <a>外套</a>
+                <a>女包</a>
+                <a>沙发</a>
+                <a>台灯</a>
+            </div>
+        </div>
+    </div>
+    <!--搜索 end-->
+
+    <!--导航条-->
+    <div class="nav-box">
+        <ul>
+            <li class="on">首页</li>
+            <li>生鲜</li>
+            <li>衣服</li>
+            <li>裤子</li>
+            <li>鞋子</li>
+            <li>帽子</li>
+            <li>家具</li>
+            <li>手机</li>
+            <li><span>更多</span>
+                <div class="nav-hide">
+                    <p>关于我们</p>
+                    <p>联系我们</p>
+                    <p>加入我们</p>
+                    <p>意见反馈</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--导航条end-->
+
+    <!--商品-->
+    <div class="main-box">
+        <div class="left">
+            <div class="tit">商品分类</div>
+            <ul class="main-nav">
+                <li><span class="category-main">生鲜果蔬</span><span class="category-sub">水果蔬菜</span></li>
+                <li><span class="category-main">美食推荐</span><span class="category-sub">面包干果</span></li>
+                <li><span class="category-main">数码电子</span><span class="category-sub">手机电脑</span></li>
+                <li><span class="category-main">家庭电器</span><span class="category-sub">电视冰箱</span></li>
+                <li><span class="category-main">厨房用品</span><span class="category-sub">厨房电器餐具</span></li>
+                <li><span class="category-main">居家生活</span><span class="category-sub">床品四件套被枕</span></li>
+                <li><span class="category-main">洗护美妆</span><span class="category-sub">洗发洁面美妆</span></li>
+                <li><span class="category-main">孕婴用品</span><span class="category-sub">奶粉玩具服装</span></li>
+                <li><span class="category-main">服饰穿搭</span><span class="category-sub">女装男装</span></li>
+                <li><span class="category-main">日用杂货</span><span class="category-sub">户外图书</span></li>
+            </ul>
+        </div>
+
+        <div class="mid">
+            <img src="img/ban.jpg" class="ban">
+            <div class="ad-box">
+                <img src="img/pic1.jpg">
+                <img src="img/pic2.jpg">
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="img/pic.jpg" class="avatar">
+            <p class="name">24215220137陈之奂</p>
+            <div class="my-nav">
+                <div class="my-nav-box"><p class="num">10</p><p>购物车</p></div>
+                <div class="my-nav-box"><p class="num">22</p><p>待收货</p></div>
+                <div class="my-nav-box"><p class="num">100</p><p>待发货</p></div>
+                <div class="my-nav-box"><p class="num">100</p><p>待付款</p></div>
+                <div class="my-nav-box"><p class="num">100</p><p>待评价</p></div>
+            </div>
+            <ul class="news">
+                <li>这是老师发的小兔鲜下方的文字，由按列展开改成了按行展开</li>
+                <li><span class="tip">指南</span><span>购物流程 · 支付方式 · 售后规则</span></li>
+                <li><span class="tip">配送</span><span>配送运费 · 配送范围 · 配送时间</span></li>
+                <li><span class="tip">关于</span><span>平台规则 · 联系我们 · 问题反馈</span></li>
+                <li><span class="tip">售后</span><span>售后政策 · 退款说明 · 取消订单</span></li>
+                <li><span class="tip">客服</span><span>在线客服 · 客服电话 400-0000-000</span></li>
+                <li><span class="tip">时间</span><span>工作时间 周一至周日 8:00-18:00</span></li>
+                <li><span class="tip">热线</span><span>服务热线 400-0000-000</span></li>
+            </ul>
+        </div>
+
+        <div class="goods">
+            <div class="goods-box"><a href="detail.html"><img src="img/goods.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g1.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g2.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g3.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g4.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g5.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g6.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g7.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g8.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+            <div class="goods-box"><a href="detail.html"><img src="img/g9.jpg"></a><p class="name">旗舰店新款休闲裤男宽松阔脚直筒秋冬季牛仔裤潮帅气百搭裤子</p><p class="price">￥99.00</p></div>
+        </div>
+    </div>
+    <!--商品 end-->
+
+    <!--底部服务区域-->
+    <div class="service-footer">
+        <div class="service-grid">
+            <div class="service-item">
+                <div class="service-icon"><span>📦</span></div>
+                <div class="service-title">购物指南</div>
+                <div class="service-desc"><a href="#">购物流程</a> | <a href="#">支付方式</a> | <a href="#">售后规则</a></div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"><span>🚚</span></div>
+                <div class="service-title">配送方式</div>
+                <div class="service-desc"><a href="#">配送运费</a> | <a href="#">配送范围</a> | <a href="#">配送时间</a></div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"><span>🏢</span></div>
+                <div class="service-title">关于我们</div>
+                <div class="service-desc"><a href="#">平台规则</a> | <a href="#">联系我们</a> | <a href="#">问题反馈</a></div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"><span>🔧</span></div>
+                <div class="service-title">售后服务</div>
+                <div class="service-desc"><a href="#">售后政策</a> | <a href="#">退款说明</a> | <a href="#">取消订单</a></div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"><span>📞</span></div>
+                <div class="service-title">服务热线</div>
+                <div class="service-desc"><a href="#">在线客服</a> | <a href="#">400-0000-000</a><br>工作时间 周一至周日 8:00-18:00</div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部链接栏-->
+    <div class="footer-links">
+        <a href="#">关于我们</a><span>|</span>
+        <a href="#">帮助中心</a><span>|</span>
+        <a href="#">售后服务</a><span>|</span>
+        <a href="#">配送与验收</a><span>|</span>
+        <a href="#">商务合作</a><span>|</span>
+        <a href="#">搜索推荐</a>
+    </div>
+
+
+    <div class="footer-copyright">
+        24215220137陈之奂
+    </div>
+</body>
+
+</html>
